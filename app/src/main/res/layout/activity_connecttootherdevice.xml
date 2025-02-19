@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35408e"
+    tools:context=".connecttootherdevice">
+
+
+
+    <TextView
+        android:id="@+id/textViewSettings"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Generate Code"
+        android:textColor="#ffde55"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121"
+        app:srcCompat="@drawable/gc" />
+
+
+    <Button
+        android:id="@+id/buttonGenerateCode"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ffde55"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Generate"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ClickonConnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/code5"
+        android:layout_width="31dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="84dp"
+        android:background="#ffde55"
+        android:paddingTop="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ClickonConnect"
+        app:layout_constraintEnd_toStartOf="@+id/code6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/code2"
+        android:layout_width="31dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="84dp"
+        android:background="#ffde55"
+        android:paddingTop="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ClickonConnect"
+        app:layout_constraintEnd_toStartOf="@+id/code3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/code1" />
+
+    <TextView
+        android:id="@+id/code8"
+        android:layout_width="29dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="84dp"
+        android:background="#ffde55"
+        android:paddingTop="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ClickonConnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/code7" />
+
+    <TextView
+        android:id="@+id/code4"
+        android:layout_width="31dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="84dp"
+        android:background="#ffde55"
+        android:paddingTop="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ClickonConnect"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/code3" />
+
+    <TextView
+        android:id="@+id/code1"
+        android:layout_width="31dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="84dp"
+        android:background="#ffde55"
+        android:paddingTop="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ClickonConnect"
+        app:layout_constraintEnd_toStartOf="@+id/code2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/code3"
+        android:layout_width="31dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="84dp"
+        android:background="#ffde55"
+        android:paddingTop="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ClickonConnect"
+        app:layout_constraintEnd_toStartOf="@+id/code4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/code2" />
+
+    <TextView
+        android:id="@+id/code7"
+        android:layout_width="31dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="84dp"
+        android:background="#ffde55"
+        android:paddingTop="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ClickonConnect"
+        app:layout_constraintEnd_toStartOf="@+id/code8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/code6" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="42dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/ClickonConnect"
+        app:layout_constraintEnd_toStartOf="@+id/code5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/code4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/nuconnect" />
+
+    <TextView
+        android:id="@+id/code6"
+        android:layout_width="31dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="84dp"
+        android:background="#ffde55"
+        android:paddingTop="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ClickonConnect"
+        app:layout_constraintEnd_toStartOf="@+id/code7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/code5" />
+
+    <TextView
+        android:id="@+id/ClickonConnect"
+        android:layout_width="386dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Copy the code to connect on other deivces"
+        android:textColor="#ffde55"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/copybut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/copybut"
+        android:layout_width="152dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="340dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ClickonConnect"
+        app:layout_constraintStart_toStartOf="@+id/ClickonConnect"
+        app:srcCompat="@drawable/cop" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSettings"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backbutton___copy__2_" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="code2,code1,code4,code3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

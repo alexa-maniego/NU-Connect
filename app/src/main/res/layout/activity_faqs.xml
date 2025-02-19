@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35408e"
+    tools:context=".faqs">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="752dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <TextView
+        android:id="@+id/textViewProfile2"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="FAQs"
+        android:textColor="#ffde55"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/faqContainer"
+        android:layout_width="379dp"
+        android:layout_height="687dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewProfile2">
+
+        <!-- FAQ Item 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/faqTitle1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="How do I connect to the university Wi-Fi using NU Connect?"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/arrowIcon1"
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_down" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/faqContent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To connect to the university Wi-Fi using NU Connect:\n\n1. Open the NU Connect app.\n2. Log in using your student credentials (ID and password).\n3. Retrieve your customized Wi-Fi code from the app.\n4. Use the provided code to connect to the campus Wi-Fi."
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <!-- FAQ Item 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/faqTitle2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Is NU Connect free to use?"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/arrowIcon2"
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_down" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/faqContent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes, NU Connect is completely free for students. There are no additional charges for using the app or accessing the campus Wi-Fi."
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <!-- FAQ Item 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/faqTitle3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Can I see my data usage on NU Connect?"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/arrowIcon3"
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_down" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/faqContent3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes, NU Connect allows you to monitor your internet usage. You can check your data consumption in the app’s dashboard to keep track of your usage."
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <!-- FAQ Item 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/faqTitle4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Does NU Connect work off-campus?"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/arrowIcon4"
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_down" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/faqContent4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No, NU Connect is specifically designed to work with the university’s on-campus Wi-Fi network. Off-campus access will not be supported."
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <!-- FAQ Item 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/faqTitle5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Can I connect multiple devices using NU Connect?"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/arrowIcon5"
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_down" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/faqContent5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes, NU Connect allows students to connect multiple devices using the same login credentials. You can use the app to retrieve your Wi-Fi code and connect multiple devices to the university network."
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/backbutton___copy__3_"
+        tools:layout_editor_absoluteY="5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
